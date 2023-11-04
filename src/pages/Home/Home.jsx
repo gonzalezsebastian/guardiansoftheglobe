@@ -1,6 +1,8 @@
-import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+// import { Link } from "react-router-dom";
+import Navbar from "../../components/Navbar";
 import MyContext from "../../others/DataContext";
+import "./Home.css";
 
 function Home() {
     // const [total, setTotal] = useState(0)
@@ -11,24 +13,27 @@ function Home() {
     //   };
     // }, [])
   
-    function acarreo(info) {
-      const { price, operacion } = info
-  
-      if (operacion) {
-        setTotal(total + price)
-      } else {
-        setTotal(total - price)
-      }
-    }
-  
     const characters = useContext(MyContext)
-    console.log(characters)
   
       return (
         <>
           {/* <Link to={'/otra'}>Ir a otra</Link> */}
-          <h1>Home</h1>
-          {/* <Acarreo total={total} /> */}
+          <MyContext.Provider value={characters}>
+            <Navbar />
+            <div className="content">
+              <div className="container">
+                <img src="/inmortal.webp" alt="The Inmortal"/>
+                <div className="text">
+                  <h1>Guardians of the Globe</h1>
+                  <p>
+                    The Guardians of the Globe are a superhero team originally
+                    formed by Immortal to protect the world from crime and
+                    injustice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </MyContext.Provider>
         </>
       )
   }

@@ -1,0 +1,46 @@
+:root {
+    color: var(--platinum);
+    background-color: var(--raisinBlack);
+  
+    font-synthesis: none;
+  
+    --raisinBlack: #1D1D29;
+    --cobaltBlue: #1E48A3;
+    --fireBrick: #BB2626;
+    --platinum: #E5E5E5;
+    --ghostWhite: #F9F8F5;
+}
+  
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.5px solid var(--platinum);
+    padding: 1vw 0;
+}
+
+.navbar h1{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.navbar ul li a{
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--platinum);
+}
+
+.navbar ul li a:hover{
+    color: var(--fireBrick);
+}

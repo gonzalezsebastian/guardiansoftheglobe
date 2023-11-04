@@ -1,0 +1,66 @@
+:root {
+    --raisinBlack: #1D1D29;
+    --cobaltBlue: #1E48A3;
+    --fireBrick: #BB2626;
+    --platinum: #E5E5E5;
+    --ghostWhite: #F9F8F5;
+}
+
+.content{
+    background-image: url('/bg-home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.content .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .container .text{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.content .container .text h1{
+    font-size: 3vw;
+    font-weight: 700;
+    color: var(--ghostWhite);
+}
+
+
+.content .container .text p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: var(--ghostWhite);
+    margin-top: 5%;
+}
+
+.content .container img{
+    width: 40%;
+    margin-top: 5%;
+    filter: drop-shadow(10px 10px 10px var(--cobaltBlue));
+}
+
+.content .container img:hover {
+    animation: vibrate 0.5s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+}

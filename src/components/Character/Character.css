@@ -1,0 +1,25 @@
+.Character{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin: 5% 0;
+}
+
+.Character h2{
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: var(--ghostWhite);
+    text-shadow: var(--fireBrick) 2px 2px 2px;
+    margin-top: -5%;
+}
+
+.Character img{
+    width: 25%;
+}
