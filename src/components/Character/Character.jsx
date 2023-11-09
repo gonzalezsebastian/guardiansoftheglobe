@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import MyContext from '../../others/DataContext';
 import './Character.css';
 
@@ -9,33 +10,18 @@ function Character() {
   return (
 
     <div>
-      {characters.map((character) => (
-        <div key={character.alias}>
-          <div className='Character'>
+        <div className='characters'>
+        {characters.map((character) => (
+          <div className='Character' key={character.alias}>
             <img src={character.picture} alt={character.alias} />
-            <h2>{character.alias}</h2>
+            <Link to={`/heroes/${character.link}`}>
+              <h2 className='link'>{character.alias}</h2>
+            </Link>
           </div>
+          ))}
         </div>
-      ))}
     </div>
  );
 }
 
 export default Character
-
-// <div className='info'>
-// <h4>Real name:</h4>
-// <p>{character.name}</p>
-// <h4>Species:</h4>
-// <p>{character.species}</p>
-// <h4>Age:</h4>
-// <p>{character.age}</p>
-// <h4>Status:</h4>
-// <p>{character.status}</p>
-// <h4>Location:</h4>
-// <p>{character.location}</p>
-// <h4>Location:</h4>
-// <p>{character.location}</p>
-// <h4>Place of birth:</h4>
-// <p>{character.placeofbirth}</p>
-// </div>

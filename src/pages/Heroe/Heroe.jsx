@@ -8,7 +8,6 @@ import './Heroe.css';
 function Heroe () {
   
   const characters = useContext(MyContext)
-  console.log(characters)
   
   return (
     <>
