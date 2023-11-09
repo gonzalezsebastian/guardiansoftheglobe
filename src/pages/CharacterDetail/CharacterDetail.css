@@ -1,5 +1,8 @@
 .profile{
     display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+
 }
 
 .image{
@@ -10,16 +13,16 @@
     justify-content: center;
     text-align: center;
     transition: all 0.3s ease;
-    margin: 2% 0;
+    margin: 5vw 0;
 }
 
 .image img{
-    width: 50%;
+    width: 60%;
 }
 
 .image h2{
-    font-size: 2.5vw;
-    font-weight: 700;
+    font-size: 3vw;
+    font-weight: 900;
     color: var(--ghostWhite);
     text-shadow: var(--cobaltBlue) 2px 2px 2px;
     margin-top: -5%;
@@ -29,17 +32,31 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
     transition: all 0.3s ease;
     margin: 2% 0;
 }
 
+.info{
+    font-size: 1.5vw;
+}
+
 .info h4{
     display: flex;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     font-weight: 700;
     color: var(--ghostWhite);
     text-shadow: var(--fireBrick) 2px 2px 2px;
+    margin: 0.5vw 0;
+}
+
+.info ul p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+
+.info ul p a{
+    text-decoration: none;
+    color: var(--platinum);
 }

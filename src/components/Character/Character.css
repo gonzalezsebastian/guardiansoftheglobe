@@ -1,6 +1,7 @@
 .characters{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
 }
 
 .Character{
@@ -18,7 +19,7 @@
 
 .Character h2{
     font-size: 2.5vw;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--ghostWhite);
     text-shadow: var(--fireBrick) 2px 2px 2px;
     margin-top: -5%;
@@ -30,4 +31,14 @@ a{
 
 .Character img{
     width: 50%;
+}
+
+.Character img:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.19));
+}
+
+.Character:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
