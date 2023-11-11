@@ -6,13 +6,13 @@ import Character from '../../components/Character';
 
 function Heroe () {
   
-  const characters = useContext(MyContext);
+    const characters = useContext(MyContext);
 
-  const heroCharacters = characters.filter((character) => character.rol === "Heroe");
+    const villainCharacters = characters.filter((character) => character.rol === "Villain");
   
   return (
     <>
-      <MyContext.Provider value={heroCharacters}>
+      <MyContext.Provider value={villainCharacters}>
         <Navbar/>
         <Character/>
       </MyContext.Provider>

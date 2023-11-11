@@ -2,13 +2,16 @@
 import MyContext from "./others/DataContext";
 import Home from "./pages/Home";
 import Heroe from "./pages/Heroe";
+import Villain from "./pages/Villain";
 import CharacterDetail from "./pages/CharacterDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   const characters = [
     {
       name: "Nolan Grayson",
+      rol: "Heroe",
       alias: "Omni-Man",
       gender: "Male",
       age: "Unknown",
@@ -61,6 +64,7 @@ function App() {
     },
     {
       name: "Mark Grayson",
+      rol: "Heroe",
       alias: "Invincible",
       gender: "Male",
       age: "17",
@@ -103,6 +107,7 @@ function App() {
     },
     {
       name: "Samantha Eve Wilkins",
+      rol: "Heroe",
       alias: "Atom Eve",
       gender: "Female",
       age: "16",
@@ -140,6 +145,7 @@ function App() {
     },
     {
       name: "Unknown",
+      rol: "Heroe",
       alias: "The Immortal",
       gender: "Male",
       age: "Unknown",
@@ -185,7 +191,46 @@ function App() {
       link: "the-immortal",
     },
     {
+      name: "Unknown",
+      rol: "Villain",
+      alias: "Mauler Twins",
+      gender: "Male",
+      age: "Unknown",
+      status: "Alive",
+      location: "Earth",
+      placeofbirth: "Earth",
+      species: "Unknown",
+      powers: [
+        "Superhuman Strength",
+        "Superhuman Durability",
+        "Regenerative Healing Factor",
+        "Genius Level Intellect",
+        "Cloning Expertise",
+        "Memory Duplication",
+        "Surgery",
+      ],
+      weaknesses: [
+        "Standard Human Weaknesses",
+        "Mental Instability",
+      ],
+      occupation: "Scientists and Supervillains",
+      affiliation: [
+        "Mauler Industries",
+      ],
+      allies: [
+        {name: "Angstrom Levy", link: "/villains/angstrom-levy"},
+      ],
+      enemies: [
+        {name: "Guardians of the Globe", link: "/heroes"},
+        {name: "Omni-Man", link: "/heroes/omni-man"},
+        {name: "Robot", link: "/heroes/robot"},
+      ],
+      picture: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5925e7dd-fbd8-4b74-a807-ca9b2f32cf80/devs53t-1d264c08-483c-4e2d-abe5-eb83e293a1b4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU5MjVlN2RkLWZiZDgtNGI3NC1hODA3LWNhOWIyZjMyY2Y4MFwvZGV2czUzdC0xZDI2NGMwOC00ODNjLTRlMmQtYWJlNS1lYjgzZTI5M2ExYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tTLRMHOUpdV5NdBL9UK_sFz611sFwuFG-w2JxObebTs",
+      link: "mauler-twins",
+    },
+    {
       name: "",
+      rol: "",
       alias: "",
       gender: "",
       age: "",
@@ -216,6 +261,8 @@ function App() {
               <Route path={"/"} element={<Home/>} />
               <Route path={"/heroes"} element={<Heroe/>} />
               <Route path={"/heroes/:link"} element={<CharacterDetail/>} />
+              <Route path={"/villains"} element={<Villain/>} />
+              <Route path={"/villains/:link"} element={<CharacterDetail/>} />
               <Route path={"*"} element={<h1>404</h1>} />
           </Routes>
         </BrowserRouter>

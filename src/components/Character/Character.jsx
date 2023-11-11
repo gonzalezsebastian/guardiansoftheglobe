@@ -4,24 +4,31 @@ import MyContext from '../../others/DataContext';
 import './Character.css';
 
 function Character() {
-
-  const characters = useContext(MyContext)
+  const characters = useContext(MyContext);
 
   return (
-
     <div>
-        <div className='characters'>
+      <div className='characters'>
         {characters.map((character) => (
           <div className='Character' key={character.alias}>
             <img src={character.picture} alt={character.alias} />
-            <Link to={`/heroes/${character.link}`}>
+            {character.rol === 'Heroe' ? (
+              <Link to={`/heroes/${character.link}`}>
+                <h2 className='link'>{character.alias}</h2>
+              </Link>
+            ) : character.rol === 'Villain' ? (
+              <Link to={`/villains/${character.link}`}>
+                <h2 className='link'>{character.alias}</h2>
+              </Link>
+            ) : (
+              // Default case or handle other roles
               <h2 className='link'>{character.alias}</h2>
-            </Link>
+            )}
           </div>
-          ))}
-        </div>
+        ))}
+      </div>
     </div>
- );
+  );
 }
 
-export default Character
+export default Character;
