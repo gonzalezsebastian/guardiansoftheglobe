@@ -4,7 +4,7 @@ import MyContext from '../../others/DataContext';
 import Character from '../../components/Character';
 
 
-function Heroe () {
+function Villain () {
   
     const characters = useContext(MyContext);
 
@@ -19,4 +19,4 @@ function Heroe () {
     </>
   );
 }
-export default Heroe;
+export default Villain;

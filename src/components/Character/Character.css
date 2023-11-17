@@ -42,3 +42,41 @@ a{
     transform: scale(1.2);
     cursor: pointer;
 }
+
+.filters{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.filter label{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: var(--ghostWhite);
+    text-shadow: var(--cobaltBlue) 2px 2px 2px;
+    margin: 0 2%;
+}
+
+.filter select{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    color: var(--ghostWhite);
+    text-shadow: var(--cobaltBlue) 2px 2px 2px;
+    background-color: var(--cobaltBlue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0;
+    height: 2vw;
+    width: 15vw;
+}
+
+.filter .abilitiesFilter{
+    height: 10vw;
+}

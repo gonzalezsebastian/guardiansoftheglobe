@@ -60,3 +60,19 @@
     text-decoration: none;
     color: var(--platinum);
 }
+
+.info .powersweaknesses{
+    display: flex;
+}
+
+.info .powersweaknesses .powers{
+    margin-right: 5%;
+}
+
+.info .alliesenemies{
+    display: flex;
+}
+
+.info .alliesenemies .allies{
+    margin-right: 5%;
+}

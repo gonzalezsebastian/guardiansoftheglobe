@@ -15,7 +15,7 @@ function CharacterDetail () {
 
   const weaknesses = character.weaknesses.map((weakness) => <li key={character.weaknesses}>{weakness}</li>);
 
-  const affiliation = character.affiliation.map((affiliation) => <li key={character.affiliation}>{affiliation}</li>);
+  // const affiliation = character.affiliation.map((affiliation) => <li key={character.affiliation}>{affiliation}</li>);
 
   const allies = character.allies.map((ally) => (
     <Link to={`${ally.link}`} key={ally.link}>
@@ -28,7 +28,6 @@ function CharacterDetail () {
       <li>{enemy.name}</li>
     </Link>
   ));
-
 
   return (
     <>
@@ -43,25 +42,29 @@ function CharacterDetail () {
               <h4>Species</h4><p>{character.species}</p>
               <h4>Age</h4><p>{character.age}</p>
               <h4>Occupation</h4><p>{character.occupation}</p>
-              <div className='powers'>
-                <h4>Powers</h4>
-                <ul><p>{powers}</p></ul>
+              <div className='powersweaknesses'>
+                <div className='powers'>
+                  <h4>Powers</h4>
+                  <ul><p>{powers}</p></ul>
+                </div>
+                <div className='weaknesses'>
+                  <h4>Weaknesses</h4>
+                  <ul><p>{weaknesses}</p></ul>
+                </div>
               </div>
-              <div className='weaknesses'>
-                <h4>Weaknesses</h4>
-                <ul><p>{weaknesses}</p></ul>
-              </div>
-              <div className='affiliation'>
+              {/* <div className='affiliation'>
                 <h4>Affiliation</h4>
                 <ul><p>{affiliation}</p></ul>
-              </div>
-              <div className='allies'>
-                <h4>Allies</h4>
-                <ul><p>{allies}</p></ul>
-              </div>
-              <div className='enemies'>
-                <h4>Enemies:</h4>
-                <ul><p>{enemies}</p></ul>
+              </div> */}
+              <div className='alliesenemies'>
+                <div className='allies'>
+                  <h4>Allies</h4>
+                  <ul><p>{allies}</p></ul>
+                </div>
+                <div className='enemies'>
+                  <h4>Enemies:</h4>
+                  <ul><p>{enemies}</p></ul>
+                </div>
               </div>
             </div>
         </div>

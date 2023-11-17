@@ -67,7 +67,7 @@ function App() {
       rol: "Heroe",
       alias: "Invincible",
       gender: "Male",
-      age: "17",
+      age: 17,
       status: "Alive",
       location: "Earth",
       placeofbirth: "Earth",
@@ -110,7 +110,7 @@ function App() {
       rol: "Heroe",
       alias: "Atom Eve",
       gender: "Female",
-      age: "16",
+      age: 16,
       status: "Alive",
       location: "Earth",
       placeofbirth: "Earth",
@@ -128,17 +128,17 @@ function App() {
         "Guardians of the Globe",
       ],
       allies: [
-        "Invincible",
-        "Robot",
-        "Rex Splode",
-        "Dupli-Kate",
-        "Monster Girl",
+        {name: "Invincible", link: "/heroes/invincible"},
+        {name: "Robot", link: "/heroes/robot"},
+        {name: "Rex Splode", link: "/heroes/rex-splode"},
+        {name: "Dupli-Kate", link: "/heroes/dupli-kate"},
+        {name: "Monster-Girl", link: "/heroes/monster-girl"},
       ],
       enemies: [
-        "Omni-Man",
-        "Mauler Twins",
-        "Flaxans",
-        "Angstrom Levy",
+        {name: "Omni-Man", link: "/heroes/omni-man"},
+        {name: "Mauler Twins", link: "/villains/mauler-twins"},
+        {name: "Flaxans", link: "/villains/flaxans"},
+        {name: "Angstrom Levy", link: "/villains/angstrom-levy"},
       ],
       picture: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2d0cffb-96b3-48e3-83bb-eb81054ac04a/dekmzz7-b35ef99f-b620-42ff-8ea5-896ef6142fc3.png/v1/fill/w_1280,h_1213/atomic_eve_png_v1_by_dglproductions_dekmzz7-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIxMyIsInBhdGgiOiJcL2ZcL2MyZDBjZmZiLTk2YjMtNDhlMy04M2JiLWViODEwNTRhYzA0YVwvZGVrbXp6Ny1iMzVlZjk5Zi1iNjIwLTQyZmYtOGVhNS04OTZlZjYxNDJmYzMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qH3Bmw9R60PXYxnxH62dsrzaFfxpsJ9LrC-GANj7JSI",
       link: "atom-eve",
@@ -228,30 +228,6 @@ function App() {
       picture: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5925e7dd-fbd8-4b74-a807-ca9b2f32cf80/devs53t-1d264c08-483c-4e2d-abe5-eb83e293a1b4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU5MjVlN2RkLWZiZDgtNGI3NC1hODA3LWNhOWIyZjMyY2Y4MFwvZGV2czUzdC0xZDI2NGMwOC00ODNjLTRlMmQtYWJlNS1lYjgzZTI5M2ExYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tTLRMHOUpdV5NdBL9UK_sFz611sFwuFG-w2JxObebTs",
       link: "mauler-twins",
     },
-    {
-      name: "",
-      rol: "",
-      alias: "",
-      gender: "",
-      age: "",
-      status: "",
-      location: "",
-      placeofbirth: "",
-      species: "",
-      powers: [
-      ],
-      weaknesses: [""],
-      occupation: "",
-      affiliation: [
-      ],
-      allies: [
-      ],
-      enemies: [
-      ],
-      picture: "",
-      link: "",
-    },
-    
   ];
 
   return (
