@@ -49,6 +49,33 @@ a{
     width: 100%;
 }
 
+.filterName{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.filterName label{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: var(--ghostWhite);
+    text-shadow: var(--cobaltBlue) 2px 2px 2px;
+    margin: 0 2%;
+}
+
+.filterName input{
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    color: var(--ghostWhite);
+    text-shadow: var(--cobaltBlue) 2px 2px 2px;
+    background-color: transparent;
+    border: 2px solid var(--cobaltBlue);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2vw;
+    width: 15vw;
+}
+
 .filter{
     display: flex;
     justify-content: center;
@@ -77,6 +104,23 @@ a{
     width: 15vw;
 }
 
+.filter input{
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    color: var(--ghostWhite);
+    text-shadow: var(--cobaltBlue) 2px 2px 2px;
+    background-color: transparent;
+    border: 2px solid var(--cobaltBlue);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2vw;
+    width: 15vw;
+}
+
 .filter .abilitiesFilter{
+    height: 10vw;
+}
+
+.filter .weaknessFilter{
     height: 10vw;
 }

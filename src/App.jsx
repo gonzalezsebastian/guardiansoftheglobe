@@ -228,6 +228,9 @@ function App() {
       picture: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5925e7dd-fbd8-4b74-a807-ca9b2f32cf80/devs53t-1d264c08-483c-4e2d-abe5-eb83e293a1b4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU5MjVlN2RkLWZiZDgtNGI3NC1hODA3LWNhOWIyZjMyY2Y4MFwvZGV2czUzdC0xZDI2NGMwOC00ODNjLTRlMmQtYWJlNS1lYjgzZTI5M2ExYjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tTLRMHOUpdV5NdBL9UK_sFz611sFwuFG-w2JxObebTs",
       link: "mauler-twins",
     },
+    {
+      
+    },
   ];
 
   return (
