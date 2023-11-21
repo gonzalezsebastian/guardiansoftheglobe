@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Heroe from "./pages/Heroe";
 import Villain from "./pages/Villain";
 import CharacterDetail from "./pages/CharacterDetail";
+import Figth from "./pages/Figths";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -36,28 +37,16 @@ function App() {
       ],
       weaknesses: ["Standard Viltrumite Weaknesses", "Humanity"],
       occupation: "Superhero and Soldier of the Viltrum Empire",
-      affiliation: [
-        "Guardians of the Globe",
-        "Global Defense Agency",
-        "Viltrum Empire",
-      ],
       allies: [
-        {name: "Art Rosenbaum", link: "/heroes/art-rosenbaum"},
-        {name: "Cecil Stedman", link: "/heroes/cecil-stedman"},
         {name: "Guardians of the Globe", link: "/heroes"},
       ],
       enemies: [
         {name: "Guardians of the Globe", link: "/heroes"},
         {name: "Mauler Twins", link: "/villains/mauler-twins"},
         {name: "Flaxans", link: "/villains/flaxans"},
-        {name: "Cecil Stedman", link: "/heroes/cecil-stedman"},
-        {name: "Donald Ferguson", link: "/heroes/donald-ferguson"},
         {name: "Global Defense Agency", link: "/heroes"},
-        {name: "Damien Darkblood", link: "/heroes/damien-darkblood"},
         {name: "ReAnimen", link: "/villains/reanimen"},
-        {name: "Hail Mary", link: "/villains/hail-mary"},
         {name: "Invincible", link: "/heroes/invincible"},
-        {name: "William Clockwell", link: "/heroes/william-clockwell"},
       ],
       picture: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2d0cffb-96b3-48e3-83bb-eb81054ac04a/dekgnrv-269124ca-6c7b-4c9f-8924-0fe7cf96d14f.png/v1/fill/w_1006,h_794/omni_man_png_by_dglproductions_dekgnrv-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAxMCIsInBhdGgiOiJcL2ZcL2MyZDBjZmZiLTk2YjMtNDhlMy04M2JiLWViODEwNTRhYzA0YVwvZGVrZ25ydi0yNjkxMjRjYS02YzdiLTRjOWYtODkyNC0wZmU3Y2Y5NmQxNGYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.XBwmO1yHGl5ayKnqf_N4QGvh4q1odlXR7kMCKEoswZc",
       link: "omni-man",
@@ -85,16 +74,9 @@ function App() {
       ],
       weaknesses: ["Standard Viltrumite Weaknesses"],
       occupation: "Superhero and Student",
-      affiliation: [
-        "Teen Team",
-        "Guardians of the Globe",
-      ],
       allies: [
         {name:"Atom Eve", link: "/heroes/atom-eve"},
         {name:"Robot", link: "/heroes/robot"},
-        {name:"Rex Splode", link: "/heroes/rex-splode"},
-        {name:"Dupli-Kate", link: "/heroes/dupli-kate"},
-        {name:"Monster Girl", link: "/heroes/dupli-kate"},
       ],
       enemies: [
         {name: "Omni-Man", link: "/heroes/omni-man"},
@@ -123,16 +105,9 @@ function App() {
       ],
       weaknesses: ["Physical Limitations"],
       occupation: "Superhero and Student",
-      affiliation: [
-        "Teen Team",
-        "Guardians of the Globe",
-      ],
       allies: [
         {name: "Invincible", link: "/heroes/invincible"},
         {name: "Robot", link: "/heroes/robot"},
-        {name: "Rex Splode", link: "/heroes/rex-splode"},
-        {name: "Dupli-Kate", link: "/heroes/dupli-kate"},
-        {name: "Monster-Girl", link: "/heroes/monster-girl"},
       ],
       enemies: [
         {name: "Omni-Man", link: "/heroes/omni-man"},
@@ -170,17 +145,8 @@ function App() {
         "Dismemberment",
       ],
       occupation: "President of the United States",
-      affiliation: [
-        "Guardians of the Globe"
-      ],
       allies: [
         {name: "Guardians of the Globe", link: "/heroes"},
-        {name: "Cecil Stedman", link: "/heroes/cecil-stedman"},
-        {name: "Donald Ferguson", link: "/heroes/donald-ferguson"},
-        {name: "War Woman", link: "/heroes/war-woman"},
-        {name: "Aquarus", link: "/heroes/aquarus"},
-        {name: "Green Ghost", link: "/heroes/green-ghost"},
-        {name: "Martian Man", link: "/heroes/martian-man"},
       ],
       enemies: [
         {name: "Omni-Man", link:"/heroes/omni-man"},
@@ -214,9 +180,6 @@ function App() {
         "Mental Instability",
       ],
       occupation: "Scientists and Supervillains",
-      affiliation: [
-        "Mauler Industries",
-      ],
       allies: [
         {name: "Angstrom Levy", link: "/villains/angstrom-levy"},
       ],
@@ -229,9 +192,146 @@ function App() {
       link: "mauler-twins",
     },
     {
-      
+      name: "Flaxans",
+      rol: "Villain",
+      alias: "Flaxans",
+      gender: "Unknown",
+      age: "Unknown",
+      status: "Alive",
+      location: "Flaxan Dimension",
+      placeofbirth: "Flaxan Dimension",
+      species: "Alien",
+      powers: [
+        "Guns and Weapons",
+        "Technology",
+      ],
+      weaknesses: [
+        "Aging",
+        "Mortality",
+      ],
+      occupation: "Galaxy domination",
+      allies: [
+      ],
+      enemies: [
+        { name: "Guardians of the Globe", link: "/heroes" },
+      ],
+      picture: "/flaxan.webp",
+      link: "flaxans",
+    },
+    {
+      name: "ReAnimen",
+      rol: "Villain",
+      alias: "ReAnimen",
+      gender: "Male",
+      age: "Unknown",
+      status: "Alive",
+      location: "Earth",
+      placeofbirth: "Earth",
+      species: "Humanoid",
+      powers: [
+        "Enhanced Strength",
+        "Enhanced Durability",
+        "Enhanced Speed",
+      ],
+      weaknesses: [
+        "Standard Human Weaknesses",
+      ],
+      occupation: "Kill Invincible",
+      allies: [
+      ],
+      enemies: [
+        { name: "Guardians of the Globe", link: "/heroes" },
+      ],
+      picture: "/ReAnimen.webp",
+      link: "reanimen",
+    },
+    {
+      name: "Rudolph Conners",
+      rol: "Heroe",
+      alias: "Robot",
+      gender: "Male",
+      age: "Unknown",
+      status: "Alive",
+      location: "Earth",
+      placeofbirth: "Earth",
+      species: "Robot",
+      powers: [
+        "Cybernetic Enhancement",
+        "Mechanokinesis",
+        "Biligualism",
+        "Genius Level Intellect",
+        "Leadership",
+        "Hand to Hand Combat",
+      ],
+      weaknesses: [
+        "Mental Instability",
+      ],
+      occupation: "SuperHero and Scientist",
+      allies: [
+        { name: "Guardians of the Globe", link: "/heroes" },
+      ],
+      enemies: [
+        { name: "Every world menace", link: "/villains" },
+      ],
+      picture: "/robot.jpg",
+      link: "robot",
+    },
+    {
+      name: "Unknown",
+      rol: "Villain",
+      alias: "Bi-Plane",
+      gender: "Male",
+      age: "Unknown",
+      status: "Alive",
+      location: "Earth",
+      placeofbirth: "Earth",
+      species: "Human",
+      powers: [
+        "Flight",
+        "Gadgetry",
+      ],
+      weaknesses: [
+        "Mental Instability",
+      ],
+      occupation: "Scientist",
+      allies: [
+      ],
+      enemies: [
+        { name: "Guardians of the Globe", link: "/heroes" },
+      ],
+      picture: "/Bi-Plane.webp",
+      link: "bi-plane",
+    },
+    {
+      name: "Angstrom Levy",
+      rol: "Villain",
+      alias: "Angstrom Levy",
+      gender: "Male",
+      age: "Unknown",
+      status: "Alive",
+      location: "Earth",
+      placeofbirth: "Earth",
+      species: "Human",
+      powers: [
+        "Dimensional Travel",
+        "Enhanced Strength",
+        "Enhanced Durability",
+        "Enhanced Intelligence",
+      ],
+      weaknesses: [
+        "Omni-Man",
+      ],
+      occupation: "Supervillain",
+      allies: [
+      ],
+      enemies: [
+        { name: "Guardians of the Globe", link: "/heroes" },
+      ],
+      picture: "/angstromlevy.webp",
+      link: "angstrom-levy",
     },
   ];
+
 
   return (
     <MyContext.Provider value={characters}>
@@ -242,6 +342,7 @@ function App() {
               <Route path={"/heroes/:link"} element={<CharacterDetail/>} />
               <Route path={"/villains"} element={<Villain/>} />
               <Route path={"/villains/:link"} element={<CharacterDetail/>} />
+              <Route path={"/fights"} element={<Figth/>} />
               <Route path={"*"} element={<h1>404</h1>} />
           </Routes>
         </BrowserRouter>

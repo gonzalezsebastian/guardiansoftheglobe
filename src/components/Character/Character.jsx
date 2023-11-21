@@ -38,9 +38,6 @@ function Character() {
   const filterCharactersByRelationship = (filteredCharacters) => {
     return filteredCharacters.filter(character =>
       selectedRelationship === '' ||
-      character.affiliation.some(ally => 
-        (typeof ally === 'string' ? ally : ally.name).toLowerCase().includes(selectedRelationship.toLowerCase())
-      ) ||
       character.enemies.some(enemy => 
         (typeof enemy === 'string' ? enemy : enemy.name).toLowerCase().includes(selectedRelationship.toLowerCase())
       )
@@ -153,7 +150,6 @@ function Character() {
               .reduce((allRelationships, character) => {
                 const relationships = [
                   ...allRelationships,
-                  ...character.affiliation.map(allies => allies.name),
                   ...character.enemies.map(enemy => enemy.name),
                 ];
                 return Array.from(new Set(relationships));
