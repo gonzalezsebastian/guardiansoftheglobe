@@ -10,7 +10,6 @@ function Navbar(){
                 <li><Link to='/heroes'>Heroes</Link></li>
                 <li><Link to='/villains'>Villains</Link></li>
                 <li><Link to='/fights'>Fights</Link></li>
-                <li><Link to='/calendar'>Calendar</Link></li>
             </ul>
         </div>
     )
