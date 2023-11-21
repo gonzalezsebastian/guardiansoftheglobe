@@ -1,0 +1,101 @@
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.results .selectHeroe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+.results .selectHeroe select{
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    background: var(--cobaltBlue);
+    border: 1px solid var(--cobaltBlue);
+    color: var(--whiteGhost);
+    padding: 10px;
+    font-size: 1vw;
+    margin-left: 2%;
+}
+
+.results h2{
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--whiteGhost);
+    margin-bottom: 1.5vw;
+}
+
+.results h3{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--whiteGhost);
+}
+
+.results ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+.results p{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--whiteGhost);
+    margin-bottom: 20px;
+}
+
+
+.results .mostFrequentFigth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.results .mostFrequentFigth img{
+    width: 15%;
+    margin-left: 2%;
+}
+
+.results .topHeroesImages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.results .topHeroesImages img{
+    width: 10%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.results .mostDefeatedVillain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+.results .mostDefeatedVillain img{
+    width: 20%;
+}
